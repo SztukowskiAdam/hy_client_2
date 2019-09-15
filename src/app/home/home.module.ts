@@ -8,6 +8,7 @@ import {SearchComponent} from './search/search.component';
 import {ProductsComponent} from './products/products.component';
 import {ProductComponent} from './product/product.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {CommonModule} from '@angular/common';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     TranslateModule,
     BarecodeScannerLivestreamModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CommonModule,
   ],
   declarations: [
     HomeComponent,
@@ -24,5 +26,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     ProductsComponent,
     ProductComponent,
   ],
+  exports: [
+    NavbarComponent
+  ]
 })
 export class HomeModule {}

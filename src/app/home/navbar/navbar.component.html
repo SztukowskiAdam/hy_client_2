@@ -1,0 +1,8 @@
+<nav class="navbar fixed-bottom navbar-light bg-light p-0">
+    <div class="list-group list-group-horizontal w-100">
+        <a class="list-group-item list-group-item-action text-center" *ngFor="let nav of navbar" routerLink="[ nav.href ]">
+            <img class="i-home" [src]="nav.img">
+            <p class="mb-0 mt-1">{{ nav.label }}</p>
+        </a>
+    </div>
+</nav>
