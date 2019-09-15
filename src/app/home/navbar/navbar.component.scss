@@ -1,0 +1,21 @@
+[class^="i-"] {
+    height: 24px;
+    width: auto;
+}
+.list-group-item-action {
+    padding-bottom: 32px;
+    position: relative;
+    border: 0;
+
+    p {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #acacac;
+    }
+    @media(max-width: 568px) {
+        p {
+            font-size: 12px;
+        }
+    }
+}
