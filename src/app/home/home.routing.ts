@@ -1,3 +1,6 @@
 export const HOME_ROUTING = {
-  HOME: ''
+  HOME: '',
+  SEARCH: 'search',
+  PRODUCTS: 'products',
+  PRODUCTS_SEARCH: 'products/:code'
 };

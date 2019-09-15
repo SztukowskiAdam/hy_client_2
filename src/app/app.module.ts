@@ -15,6 +15,7 @@ import {Token} from '@angular/compiler';
 import {CoreModule} from './core/core.module';
 import {HomeModule} from './home/home.module';
 import {AuthModule} from './auth/auth.module';
+import { NgxSpinnerModule } from "ngx-spinner";
 
 const config: SocketIoConfig = { url: environment.servers.socket, options: {}};
 
@@ -33,6 +34,7 @@ export function translateHttpLoaderFactory(http: HttpClient) {
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     SocketIoModule.forRoot(config),
     FormsModule,
+    NgxSpinnerModule,
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {

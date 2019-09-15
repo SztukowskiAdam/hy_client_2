@@ -1,0 +1,13 @@
+<form [formGroup]="searchForm">
+  <fieldset>
+    <legend>Login</legend>
+    <div class="form-field">
+      <label>Email:</label>
+      <input type="text" name="code" formControlName="code" >
+    </div>
+  </fieldset>
+  <div class="form-buttons">
+    <button class="button button-primary"
+            (click)="search()">Search</button>
+  </div>
+</form>
