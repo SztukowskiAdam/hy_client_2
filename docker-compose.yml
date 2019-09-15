@@ -1,0 +1,11 @@
+version: '3'
+services:
+  hy1_client:
+      build:
+          context: .
+          dockerfile: ./angular.Dockerfile
+      ports:
+          - "8080:80"
+          - "443:443"
+      volumes:
+          - ./dist:/usr/local/apache2/htdocs
