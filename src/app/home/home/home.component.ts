@@ -23,6 +23,7 @@ export class HomeComponent implements AfterViewInit {
   onValueChanges(result) {
     this.barcodeValue = result.codeResult.code;
     console.log(this.barcodeValue);
+    this.barecodeScanner.stop();
     this.router.navigateByUrl(HOME_ROUTING.PRODUCTS + '/' + this.barcodeValue);
   }
 

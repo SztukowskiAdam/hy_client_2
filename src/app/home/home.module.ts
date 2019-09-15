@@ -9,6 +9,7 @@ import {ProductsComponent} from './products/products.component';
 import {ProductComponent} from './product/product.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {CommonModule} from '@angular/common';
+import {RankingComponent} from './ranking/ranking.component';
 
 @NgModule({
   imports: [
@@ -25,6 +26,7 @@ import {CommonModule} from '@angular/common';
     SearchComponent,
     ProductsComponent,
     ProductComponent,
+    RankingComponent
   ],
   exports: [
     NavbarComponent

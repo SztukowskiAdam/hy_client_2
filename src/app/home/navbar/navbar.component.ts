@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { APP_ROUTING } from 'src/app/app.routing';
+import {HOME_ROUTING} from '../home.routing';
 
 @Component({
   selector: 'app-navbar',
@@ -15,17 +16,17 @@ export class NavbarComponent implements OnInit {
       label: 'Home'
     },
     {
-      href: APP_ROUTING.SEARCH,
+      href: HOME_ROUTING.SEARCH,
       img: 'assets/i-set/i-search.png',
       label: 'Search'
     },
     {
-      href: APP_ROUTING.PRODUCTS,
+      href: HOME_ROUTING.PRODUCTS,
       img: 'assets/i-set/i-products.png',
       label: 'Products'
     },
     {
-      href: APP_ROUTING.RANKING,
+      href: HOME_ROUTING.RANKING,
       img: 'assets/i-set/i-ranking.png',
       label: 'Ranking'
     },
@@ -34,7 +35,7 @@ export class NavbarComponent implements OnInit {
       img: 'assets/i-set/i-login.png',
       label: 'Sign in'
     }
-  ]
+  ];
 
   constructor() {
   }

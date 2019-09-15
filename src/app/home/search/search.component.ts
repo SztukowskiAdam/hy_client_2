@@ -22,6 +22,6 @@ export class SearchComponent {
   search() {
     this.spinner.show();
     const code = this.searchForm.getRawValue().code;
-    this.router.navigateByUrl(HOME_ROUTING.PRODUCTS + '/' + code);
+    this.router.navigateByUrl('/product/' + code);
   }
 }
