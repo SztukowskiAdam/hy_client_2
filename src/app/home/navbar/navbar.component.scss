@@ -18,4 +18,9 @@
             font-size: 12px;
         }
     }
+    &.active,
+    &:hover,
+    &:focus {
+        background-color: #3B4491;
+    }
 }
